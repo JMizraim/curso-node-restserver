@@ -6,14 +6,10 @@ const {
   usuarioDelete,
 } = require("../controllers/usuario");
 
-function Hola (){
-
-}
-
 const router = Router();
 
 router.get("/", usuarioGet);
-router.put("/", usuarioPut);
+router.put("/:id", usuarioPut);
 router.post("/", usuarioPost);
 router.delete("/", usuarioDelete);
 

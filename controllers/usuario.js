@@ -8,7 +8,8 @@ const usuarioPost = (req, res) => {
   res.json({ mensaje: "post API", nombre, edad });
 };
 const usuarioPut = (req, res) => {
-  res.json({ mensaje: "put API" });
+  const { id } = req.params;
+  res.json({ mensaje: "put API" , id});
 };
 const usuarioDelete = (req, res) => {
   res.json({ mensaje: "delete API" });
